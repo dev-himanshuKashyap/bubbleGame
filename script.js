@@ -37,6 +37,11 @@ function increaseScore() {
     document.querySelector("#scoreval").textContent = score;
 }
 
+function decreaseScore(){
+    score -= 10;
+    document.querySelector("#scoreval").textContent = score;
+}
+
 document.querySelector("#pbtm").addEventListener("click", function (details) {
     var clickedNumber = Number(details.target.textContent);
     if (hitnum === clickedNumber) {
@@ -44,14 +49,19 @@ document.querySelector("#pbtm").addEventListener("click", function (details) {
         getNewHit();
         makeBubble();
     }
+    else if (hitnum !== clickedNumber){
+        decreaseScore();
+        getNewHit();
+        makeBubble();
+    }
 })
 
 function restartButton() {
     score = 0;
-    timer = 59;
+    timer = 60;
     document.querySelector("#scoreval").textContent = 0;
-    document.querySelector("#timervalue").textContent = 59;
-    runTimer(); // this will clear the previous timer and start a new one
+    document.querySelector("#timervalue").textContent = 60;
+    runTimer();
     getNewHit();
     makeBubble();
 }
