@@ -21,7 +21,7 @@ function runTimer(timer = 59) {
             document.querySelector("#timervalue").textContent = timer;
         } else {
             clearInterval(timerId);
-            document.querySelector("#pbtm").innerHTML = `<h1 id = finalScore>${score + "🔥"}<br>Bas Itna Hi Kr Paaye!<br> Firse Koshish Kro </h1>`;
+            document.querySelector("#pbtm").innerHTML = `<h1 id = finalScore>${score + "🔥"}<br>Restart It!</h1>`;
         }
     }, 1000);
 }
