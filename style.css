@@ -1,32 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-html,body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  html, body {
     height: 100%;
     width: 100%;
-}
-
-#main{
+  }
+  
+  #main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
     background-color: rgb(105, 167, 105);
-}
-
-#panel{
+  }
+  
+  #panel {
     overflow: hidden;
     width: 80%;
     height: 80%;
     border-radius: 10px;
     background-color: #fff;
-}
-
-#ptop{
+  }
+  
+  #ptop {
     display: flex;
     padding: 0 30%;
     align-items: center;
@@ -35,29 +36,29 @@ html,body{
     width: 100%;
     height: 80px;
     background-color: rgb(57, 141, 57);
-}
-
-.elem{
+  }
+  
+  .elem {
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-.elem h2{
+  }
+  
+  .elem h2 {
     font-weight: 500;
     font-size: 23px;
-}
-
-.box{
+  }
+  
+  .box {
     padding: 6px 20px;
     background-color: #fff;
     border-radius: 5px;
     color: rgb(16, 147, 19);
     font-weight: 700;
     font-size: 22px;
-}
-
-#pbtm{
+  }
+  
+  #pbtm {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,9 +67,9 @@ html,body{
     padding: 20px;
     width: 100%;
     height: calc(100% - 80px);
-}
-
-.bubble{
+  }
+  
+  .bubble {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -78,21 +79,83 @@ html,body{
     color: #fff;
     background-color: rgba(43, 147, 48, 0.801);
     font-weight: 500;
-}
-
-.bubble:hover{
+  }
+  
+  .bubble:hover {
     cursor: pointer;
     background-color: rgba(24, 147, 30, 0.838);
-}
-
-#finalScore{
+  }
+  
+  #finalScore {
     text-align: center;
     color: green;
     padding: 50px;
     border: 1px solid rgb(0, 105, 0);
-}
-
-button{
+  }
+  
+  button {
     padding: 4px 8px;
     color: green;
-}
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* For screens smaller than 1200px */
+  @media (max-width: 1200px) {
+    #panel {
+      width: 90%;
+      height: 90%;
+    }
+    #ptop {
+      padding: 0 20%;
+    }
+    .bubble {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  /* For screens smaller than 992px */
+  @media (max-width: 992px) {
+    #panel {
+      width: 95%;
+      height: 95%;
+    }
+    #ptop {
+      padding: 0 15%;
+    }
+    .bubble {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  /* For screens smaller than 768px */
+  @media (max-width: 768px) {
+    #panel {
+      width: 98%;
+      height: 98%;
+    }
+    #ptop {
+      padding: 0 10%;
+    }
+    .bubble {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  /* For screens smaller than 480px */
+  @media (max-width: 480px) {
+    #panel {
+      width: 100%;
+      height: 100%;
+    }
+    #ptop {
+      padding: 0 5%;
+    }
+    .bubble {
+      width: 20px;
+      height: 20px;
+    }
+  }
