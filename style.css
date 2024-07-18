@@ -96,3 +96,58 @@ button{
     padding: 4px 8px;
     color: green;
 }
+
+@media (max-width: 768px) {
+    #panel {
+      width: 90%;
+      height: 90%;
+    }
+    #ptop {
+      padding: 0 20%;
+    }
+    .elem h2 {
+      font-size: 18px;
+    }
+    .box {
+      padding: 4px 15px;
+      font-size: 18px;
+    }
+    #pbtm {
+      padding: 15px;
+    }
+    .bubble {
+      width: 40px;
+      height: 40px;
+    }
+    #finalScore {
+      padding: 30px;
+    }
+  }
+  
+  /* Mobile and below */
+  @media (max-width: 480px) {
+    #panel {
+      width: 95%;
+      height: 95%;
+    }
+    #ptop {
+      padding: 0 15%;
+    }
+    .elem h2 {
+      font-size: 14px;
+    }
+    .box {
+      padding: 2px 10px;
+      font-size: 14px;
+    }
+    #pbtm {
+      padding: 10px;
+    }
+    .bubble {
+      width: 30px;
+      height: 30px;
+    }
+    #finalScore {
+      padding: 20px;
+    }
+  }
